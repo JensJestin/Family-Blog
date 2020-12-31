@@ -1,0 +1,55 @@
+<html>
+
+<head>
+    <title>Save Trees.</title>
+    <style>
+        body{ text-align:center; }
+         #firstp{ word-spacing: 10px;
+          font-variant: small-caps;
+           text-align: center;
+            font-size: 80px; }
+             #reasontext{ font-size:50px; } 
+             #album { border-style:solid; border-color:#689F38 border: 1px border-radius: 80px; padding: 5px; width : 450px; }
+
+    </style>
+</head>
+
+<body>
+    <audio id="audio" src="https://mahdihat791.github.io/v2/test.mp3"> </audio>
+    <p id="firstp">Our Family Book </p>
+    <p>“The most important thing in the world is family and love.” –John Wooden
+    <p> <img id="album" src="download.png">
+    <div> <button type="button" onclick="nextslide()"> Next </button> </div>
+    <p id="name"> "“The most important thing in the world is family and love.” –John Wooden"</p>
+</body>
+<script>
+    var name= [
+  "Mr.Jestin.K.Joseph",
+  "Mr.Jestin.K.Joseph",
+  "Mr.Jestin.K.Joseph",
+  "Mrs.Jancy Jestin",
+  "Mrs.Jancy Jestin",
+  "Mrs.Jancy Jestin",
+  "Mr.Cicil Jestin",
+  "Mr.Cicil Jestin",
+  "Mr.Cicil Jestin",
+  "Mt.Jens Jestin",
+  "Mt.Jens Jestin",
+  "Mt.Jens Jestin",
+];
+var people= [
+ image src ="APPA1">,
+ image src ="APPA2">,
+ image src ="APPA3">,
+];
+
+var i=0;
+function nextslide()
+{ document.getElementById("reasontext").innerhtml=name[i];
+ document.getElementById("album").src=people[i]; 
+ i++;
+ document.getElementtById("audio").play();
+}
+</script>
+
+</html>
